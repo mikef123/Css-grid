@@ -6,10 +6,30 @@ body {
     display: grid;
     /* grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 200px 200px; */
-    grid-template: 200px 100px / 200px 100px 50%;
+    /* grid-template: 200px 100px / repeat(4, 1fr); */
+    /* grid-template: 200px 100px / repeat(4, minmax(200px, 1fr)); */
+    grid-template: 100px 1fr 150px / 200px 1fr;
     /* grid-column-gap: 30px;
     grid-row-gap: 50px; */
-    grid-gap: 10px 50px;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header header" "left contenido" "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.left {
+    grid-area: left;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 .item {

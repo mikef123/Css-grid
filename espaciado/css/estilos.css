@@ -4,20 +4,15 @@ body {
 
 .container {
     display: grid;
-    /* grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px; */
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
     grid-template: 200px 100px / 200px 100px 50%;
-    /* grid-column-gap: 30px;
-    grid-row-gap: 50px; */
-    grid-gap: 10px 50px;
 }
 
 .item {
     background: lightblue;
     padding: 10px;
     border: 1px solid red;
-    /* margin-right: 10px;
-    margin-bottom: 10px */
 }
 
 .item:nth-of-type(4) {
