@@ -6,3 +6,9 @@ body {
     display: grid;
     grid-template-columns: 200px 200px 200px;
 }
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
